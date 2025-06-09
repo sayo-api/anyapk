@@ -2,9 +2,6 @@ workflows:
   build-android:
     name: Build AnyAPI WebView App
     max_build_duration: 15
-    environment:
-      vars:
-        # Nenhuma definição de JAVA_HOME aqui
     scripts:
       - name: Build APK
         script: ./gradlew assembleRelease
